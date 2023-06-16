@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Component Library</title>
+    <!--Adding css link to html page-->
+    <Link href="style.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -19,41 +21,42 @@
     <h2>This is the second largest heading.</h2>
     <p>Let me show you normal text. This is free flowing and wrap at the end like a paragraph.</p>
     <p>This paragraph will have <strong>bold</strong> text.</p>
-    <small>This is relatively small text.</small>
+    <p class="text-sm">This is relatively small text.</p>
 
     <hr>
 
-    <h2>@container</h2>
+    <h2>@containers</h2>
     <h3>Fluid container</h3>
-    <div>This is a fluid container and it will go till the end of the page.</div>
+    <div class="container-fluid">This is a fluid container and it will go till the end of the page.</div>
+
     <h3>Center container.</h3>
-    <div>This is a centered container and it will go till the specified width.</div>
+    <div class="container">This is a centered container and it will go till the specified width.</div>
 
     <hr>
 
     <h2>@links</h2>
-    <a href="https:/www.google.com">Primary Link</a>
-    <a href="https://www.apple.com">Secondary Link</a>
+    <a href="https:/www.google.com" class="primary-link">Primary Link</a>
+    <a href="https://www.apple.com" class="secondary-link">Secondary Link</a>
 
     <hr>
 
     <h2>@lists</h2>
     <h3>Unordered List</h3>
-    <ul>
+    <ul class="unordered">
         <li>Item One</li>
         <li>Item Two</li>
         <li>Item Three</li>
     </ul>
 
     <h3>Unordered Inline List</h3>
-    <ul>
+    <ul class="unordered list-inline">
         <li>Inline Item One</li>
         <li>Inline Item Two</li>
         <li>Inline Item Three</li>
     </ul>
 
     <h3>Reverse Ordered List</h3>
-    <ol reveresed>
+    <ol reversed>
         <li>Milk</li>
         <li>Eggs</li>
         <li>Bread</li>
@@ -62,56 +65,57 @@
     <hr>
 
     <h2>@nav</h2>
-    <nav>
-        <div>iAmBrad</div>
-        <ul>
-            <li>
-                <a href="/">home</a>
-            </li>
-            <li>
-                <a href="/">products</a>
-            </li>
-            <li>
-                <a href="/">about</a>
-            </li>
-        </ul>
+    <p>Navigation is used on the top of the page and used to get to different pages</p>
+    <nav class="navigation">
+        <div class="container-fluid">
+            <div class="brand">theBrandName</div>
+            <ul>
+                <li>
+                    <a href="/" class="active">home</a>
+                </li>
+                <li>
+                    <a href="/">products</a>
+                </li>
+                <li>
+                    <a href="/">about</a>
+                </li>
+            </ul>
+        </div>
     </nav>
 
+    <hr>
+
     <h2>@header</h2>
-    <header>
+    <header class="hero">
         <img src="images/profile_bg_green.svg" width="512" height="512" />
         <h1>heading inside <span>header</span></h1>
     </header>
 
     <hr>
 
-    <h2>@sections</h2>
-    <section>
-        <div>
-            <h1>white section</h1>
-            <p>of the printing and typesetting industry.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
+    <h2> @section</h2>
+
+    <p> A section is used to separate parts of pages. In marketing websites you would have seen a header followed by
+        sections of features, team, pricing, contact info etc.</p>
+    <section class="section">
+        <h3>@normal section</h3>
+        <h2> heading inside section</h2>
+        <p>Text defining this section and many more things</p>
+        <a href="" class="primary-link"> Primary Button</a>
     </section>
-    <section>
-        <div>
-            <h1>off white background</h1>
-            <p>of the printing and typesetting industry.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
+
+    <section class="section ow">
+        <h3>@an off white section</h3>
+        <h2> inside off white section</h2>
+        <p>Text defining this section and many more things</p>
+        <a href="/" class="primary-link"> Primary Button</a>
     </section>
 
     <hr>
 
     <h2>@footer</h2>
-    <footer>
-        <div>Some small heading inside footer.</div>
+    <footer class="footer">
+        <div class="heading">Some small heading inside footer.</div>
         <ul>
             <li><a href="/">socialone</a></li>
             <li><a href="/">socialtwo</a></li>
@@ -119,4 +123,5 @@
         </ul>
     </footer>
 </body>
+
 </html>
